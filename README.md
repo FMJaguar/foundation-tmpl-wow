@@ -1,6 +1,6 @@
 foundation--tmpl-wow
 ====================
 
-World of Warcraft outline with Zurb Foundation 
+Outline with Zurb Foundation modeled after worldofwarcraft.com
 
 as github page (gh-pages branch)
