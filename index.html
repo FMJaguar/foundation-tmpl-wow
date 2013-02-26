@@ -1,1 +1,252 @@
-Test Page
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="myApp" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>New Layout</title>
+
+	<!-- Included CSS Files -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/foundation/3.2.5/javascripts/foundation.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/foundation/3.2.5/javascripts/modernizr.foundation.js"></script>
+  <link type="text/css" rel="stylesheet" href="//cdn.jsdelivr.net/foundation/3.2.5/stylesheets/foundation.min.css" />
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+
+  <link rel="stylesheet" href="css/app.css"/>
+  
+  <style>
+  	/*inline styles for mockup */
+
+  	body{
+  		font: normal 12px/1.5 Arial, Verdana, sans-serif;
+  	}
+
+  	.news-articles{
+  		padding: 20px 20px;
+  	}
+
+  	.line-header{
+  		margin-bottom: 5px;
+  	}
+
+  	.news-article{
+  		margin-bottom:30px;
+  	}
+
+  	.article-title{
+			font-size: 22px;
+			letter-spacing: -0.03em;
+			font-weight: bold;
+  		margin-bottom: 0px;
+   	}
+
+  	.headline{
+  		font-size: 22px;
+			font-weight: bold;
+			letter-spacing: -0.05em;
+			line-height: 1em;
+			margin-bottom:2px;
+		}
+
+		.caption{
+			position: absolute;ot
+			left: 30px;
+			bottom: 30px;
+			width: 580px;
+			z-index: 35;
+			text-shadow: 0
+  	}
+
+  	.small-headline{
+			font-size: 12px;
+			font-weight: bold;
+			line-height: normal;
+			padding: 7px 0 0 0;
+			display: block;
+			word-wrap: break-word;
+  	}
+
+    .row {
+      max-width: 1000px !important;
+    }
+
+  	.main{
+  		background-color:#EEE;
+  	}
+
+  	.side{
+  		background-color:#BBB;
+  	}
+
+  	.top-nav{
+  	 height:80px;
+    }
+
+  	div{
+  		box-shadow: inset 0 0 1px silver;
+  	}
+  </style>
+</head>
+<body>
+  <section class="container">
+  <header class="row">
+    <h1>Layout</h1>
+  </header>
+  <hr>
+	<div class="row">
+  		<div class="nine columns main">
+  			<div class="row">
+  				<div class="twelve columns">
+  					<div class="row">
+              <div>
+                <div class="two columns">
+                  <div class="top-nav">a</div>
+                </div>
+                <div class="two columns">
+                  <div class="top-nav">a</div>
+                </div>
+                <div class="two columns">
+                  <div class="top-nav">a</div>
+                </div>
+                <div class="two columns">
+                  <div class="top-nav">a</div>
+                </div>
+                <div class="two columns">
+                  <div class="top-nav">a</div>
+                </div>
+                <div class="two columns">
+    						  <div class="top-nav">a</div>
+                </div>
+              </div>
+  					</div>
+  				</div>  				
+  			</div>
+  			<div class="row">
+  				<div class="twelve columns">
+  					<div class="row">
+  						<div class="twelve columns">
+ 								<img src="http://placehold.it/800x400" />
+ 								<div class="caption">
+ 									<h3 class="headline">The Next Title Here</h3>
+	 								The text that goes with the next title
+ 								</div>
+ 							</div>
+ 						</div>
+  					<div class="row">
+  						<div class="three columns">
+ 								<img src="http://placehold.it/800x400" />
+                <span class="small-headline">Sed felis nisi, vestibulum  Integer quis odio lacus.</span>
+ 							</div>
+              <div class="three columns">
+                <img src="http://placehold.it/800x400" />
+                <span class="small-headline">Morbi eget neque dui, quis mattis sem.</span>
+              </div>
+              <div class="three columns">
+                <img src="http://placehold.it/800x400" />
+                <span class="small-headline">Nulla in nisl lacus, at feugiat ante</span>
+              </div>
+              <div class="three columns">
+                <img src="http://placehold.it/800x400" />
+                <span class="small-headline">Curabitur vestibulum sapien id metus auctor aliquet.</span>
+              </div>
+ 						</div>
+ 						<div class="row">
+ 							<div class="news-articles">
+	 							<div class="news-article">
+	 								<h3 class="article-title">News Article One</h3>
+		 							<div class="line-header">by FMJaguar, 55 minutes ago [ ]76</div>
+		 							<div class="row">
+			 							<div class="three columns">
+			 								<img src="http://placehold.it/135x100"/>
+			 							</div>
+			 							<div class="nine columns">
+			 								Aaaaaaaaaaaaaa
+			 							</div>
+		 							</div>
+		 							<div style="clear:both"></div>
+		 						</div>
+	 							<div class="news-article">
+	 								<h3 class="article-title">News Article Two</h3>
+		 							<div class="line-header">by FMJaguar, 55 minutes ago [ ]76</div>
+		 							<div class="row">
+			 							<div class="three columns">
+			 								<img src="http://placehold.it/135x100"/>
+			 							</div>
+			 							<div class="nine columns">
+			 								Aaaaaaaaaaaaaa
+			 							</div>
+		 							</div>
+		 							<div style="clear:both"></div>
+		 						</div>
+	 							<div class="news-article">
+	 								<h3 class="article-title">News Article Three</h3>
+		 							<div class="line-header">by FMJaguar, 55 minutes ago [ ]76</div>
+		 							<div class="row">
+			 							<div class="three columns">
+			 								<img src="http://placehold.it/135x100"/>
+			 							</div>
+			 							<div class="nine columns">
+			 								Aaaaaaaaaaaaaa
+			 							</div>
+		 							</div>
+		 							<div style="clear:both"></div>
+		 						</div>
+	 							<div class="news-article">
+	 								<h3 class="article-title">News Article Four</h3>
+		 							<div class="line-header">by FMJaguar, 55 minutes ago [ ]76</div>
+		 							<div class="row">
+			 							<div class="three columns">
+			 								<img src="http://placehold.it/135x100"/>
+			 							</div>
+			 							<div class="nine columns">
+			 								Aaaaaaaaaaaaaa
+			 							</div>
+		 							</div>
+		 							<div style="clear:both"></div>
+		 						</div>
+	 							<div class="news-article">
+	 								<h3 class="article-title">News Article Five</h3>
+		 							<div class="line-header">by FMJaguar, 55 minutes ago [ ]76</div>
+		 							<div class="row">
+			 							<div class="three columns">
+			 								<img src="http://placehold.it/135x100"/>
+			 							</div>
+			 							<div class="nine columns">
+			 								Aaaaaaaaaaaaaa
+			 							</div>
+		 							</div>
+		 							<div style="clear:both"></div>
+		 						</div>
+	 						</div>
+ 						</div>
+ 					</div>
+ 				</div>
+  		</div>
+  		<div class="row">
+  		<div class="three columns side">
+  			<div class="row">
+  				<img src="http://placehold.it/300x60" />
+  			</div>
+  		</div>
+  	</div>
+ </section>
+  <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
